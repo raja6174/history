@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 5px 10px;
-  border: 2px solid blue;
 }
 
 .time-accessed {
@@ -13,6 +12,7 @@
 .logo-title-container {
   display: flex;
   align-items: flex-start;
+  width: 100%;
 }
 
 .logo-image {
@@ -24,9 +24,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 100%;
-  border: 2px solid red;
-  width: 100%;
+  flex-grow: 1;
 }
 
 .title-domain-container {
@@ -34,6 +32,7 @@
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 15px;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -41,6 +40,7 @@
   font-weight: bold;
   margin: 0px;
   margin-bottom: 4px;
+  margin-right: 10px;
 }
 
 .domain-url {
@@ -59,6 +59,11 @@ button {
   .history-item {
     flex-direction: row;
     align-items: center;
+  }
+
+  .time-accessed {
+    font-size: 14px;
+    width: 75px;
   }
 
   .logo-title-container {
